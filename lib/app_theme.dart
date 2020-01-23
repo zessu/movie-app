@@ -28,14 +28,15 @@ class AppTheme {
       iconTheme: IconThemeData(color: _lightOnPrimaryColor),
     ),
     colorScheme: ColorScheme.light(
-        primary: _lightPrimaryColor,
-        secondary: _lightSecondaryColor,
-        onPrimary: _lightOnPrimaryColor,
-        onSecondary: _lightOnSecondaryColor,
-        surface: _lightSurfaceColor,
-        background: _lightBackGroundColor,
-        error: _errorColor,
-        onSurface: _lightOnSurfaceColor),
+      primary: _lightPrimaryColor,
+      secondary: _lightSecondaryColor,
+      onPrimary: _lightOnPrimaryColor,
+      onSecondary: _lightOnSecondaryColor,
+      surface: _lightSurfaceColor,
+      onSurface: _lightOnSurfaceColor,
+      background: _lightBackGroundColor,
+      error: _errorColor,
+    ),
     textTheme: _lightTextTheme,
   );
 
@@ -46,14 +47,15 @@ class AppTheme {
       iconTheme: IconThemeData(color: _darkOnPrimaryColor),
     ),
     colorScheme: ColorScheme.dark(
-        primary: _darkPrimaryColor,
-        secondary: _darkSecondaryColor,
-        onPrimary: _darkOnPrimaryColor,
-        onSecondary: _darkOnSecondaryColor,
-        surface: _darkSurfaceColor,
-        background: _darkBackGroundColor,
-        error: _errorColor,
-        onSurface: _darkOnSurfaceColor),
+      primary: _darkPrimaryColor,
+      secondary: _darkSecondaryColor,
+      onPrimary: _darkOnPrimaryColor,
+      onSecondary: _darkOnSecondaryColor,
+      surface: _darkSurfaceColor,
+      onSurface: _darkOnSurfaceColor,
+      background: _darkBackGroundColor,
+      error: _errorColor,
+    ),
     textTheme: _darkTextTheme,
   );
 
@@ -62,7 +64,7 @@ class AppTheme {
   static final TextStyle _lightScreenSubTitleTextStyle =
       TextStyle(fontSize: 16.0, color: _lightOnSurfaceColor);
   static final TextStyle _lightScreenHeadingTextStyle =
-      TextStyle(fontSize: 32.0, color: _lightOnSurfaceColor);
+      TextStyle(fontSize: 32.0, color: _lightOnPrimaryColor);
   static final TextStyle _lightScreenBodyTextStyle =
       TextStyle(fontSize: 20.0, color: _lightOnSurfaceColor);
 
@@ -71,7 +73,7 @@ class AppTheme {
   static final TextStyle _darkScreenSubTitleTextStyle =
       TextStyle(fontSize: 16.0, color: _darkOnSurfaceColor);
   static final TextStyle _darkScreenHeadingTextStyle =
-      TextStyle(fontSize: 48.0, color: _darkOnSurfaceColor);
+      TextStyle(fontSize: 32.0, color: _darkOnPrimaryColor);
   static final TextStyle _darkScreenBodyTextStyle =
       TextStyle(fontSize: 20.0, color: _darkOnSurfaceColor);
 
