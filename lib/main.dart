@@ -47,6 +47,7 @@ class MyHomePage extends StatelessWidget {
             onPressed: () {},
           )
         ],
+        iconTheme: Theme.of(context).appBarTheme.iconTheme,
       ),
       body: Container(),
     );
