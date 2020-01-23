@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   // light theme colors
-  static const Color _lightPrimaryColor = Colors.white;
-  static const Color _lightSecondaryColor = Colors.red;
+  static const Color _lightPrimaryColor = Colors.red;
+  static const Color _lightSecondaryColor = Colors.blue;
   static const Color _lightOnPrimaryColor = Colors.black;
   static const Color _lightOnSecondaryColor = Colors.black;
   static const Color _lightBackGroundColor = Colors.white;
@@ -14,7 +14,7 @@ class AppTheme {
   static const Color _darkPrimaryColor = Colors.yellow;
   static const Color _darkSecondaryColor = Colors.blue;
   static const Color _darkOnPrimaryColor = Colors.black;
-  static const Color _darkOnSecondaryColor = Colors.white;
+  static const Color _darkOnSecondaryColor = Colors.black;
   static const Color _darkBackGroundColor = Colors.black54;
   static const Color _darkSurfaceColor = Colors.black54;
   static const Color _darkOnSurfaceColor = Colors.white;
@@ -39,7 +39,7 @@ class AppTheme {
     textTheme: _lightTextTheme,
   );
 
-  static final ThemeData DarkTheme = ThemeData(
+  static final ThemeData darkTheme = ThemeData(
     scaffoldBackgroundColor: _darkSurfaceColor,
     appBarTheme: AppBarTheme(
       color: _darkPrimaryColor,
@@ -62,7 +62,7 @@ class AppTheme {
   static final TextStyle _lightScreenSubTitleTextStyle =
       TextStyle(fontSize: 16.0, color: _lightOnSurfaceColor);
   static final TextStyle _lightScreenHeadingTextStyle =
-      TextStyle(fontSize: 48.0, color: _lightOnSurfaceColor);
+      TextStyle(fontSize: 32.0, color: _lightOnSurfaceColor);
   static final TextStyle _lightScreenBodyTextStyle =
       TextStyle(fontSize: 20.0, color: _lightOnSurfaceColor);
 
