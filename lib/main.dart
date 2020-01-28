@@ -24,7 +24,9 @@ class MyHomePage extends StatelessWidget {
       "strangers are forever",
       "die before dday",
       "when the bad man returns",
-      "who knew angles die"
+      "who knew angles die",
+      "dubstep for life",
+      "the story of savage"
     ];
     return Scaffold(
         appBar: AppBar(
@@ -59,8 +61,7 @@ class MyHomePage extends StatelessWidget {
         body: ListView.builder(
             itemCount: movies.length,
             itemBuilder: (BuildContext context, int index) {
-              return Card(
-                  child: ListTile(
+              return ListTile(
                 title: Text(movies[index],
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
@@ -69,9 +70,10 @@ class MyHomePage extends StatelessWidget {
                 subtitle: Text("greatest movie of all time"),
                 leading: Icon(
                   Icons.movie,
-                  color: Colors.blue[500],
+                  color: Theme.of(context).colorScheme.onSecondary,
                 ),
-              ));
+                onTap: () => debugPrint("clicked on a ${movies[index]}"),
+              );
             }));
   }
 }
