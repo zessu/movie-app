@@ -78,17 +78,17 @@ class MyHomePage extends StatelessWidget {
       drawer: Drawer(
           child: ListView(
         children: <Widget>[
-          CreateTile("Home"),
-          CreateTile("Account Settings"),
-          CreateTile("About"),
-          CreateTile("Logout"),
+          createTile("Home"),
+          createTile("Account Settings"),
+          createTile("About"),
+          createTile("Logout"),
         ],
       )),
     );
   }
 }
 
-ListTile CreateTile(String title) {
+ListTile createTile(String title) {
   return ListTile(
     title: Text(title,
         style: TextStyle(
